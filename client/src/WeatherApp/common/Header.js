@@ -16,6 +16,12 @@ class App extends React.Component {
             <li>
               <Link to="/about">about</Link>
             </li>
+                <li>
+              <Link to="/register">register</Link>
+            </li>
+              <li>
+              <Link to="/login">login</Link>
+            </li>
           </ul>
         </div>
       </nav>

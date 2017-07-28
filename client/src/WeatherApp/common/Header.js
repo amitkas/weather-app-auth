@@ -3,6 +3,8 @@ import {Link} from 'react-router-dom'; //Calling link to bind with router
 
 class App extends React.Component {
   render() {
+
+    let loginOrOut = this.props.user._id?  <Link to="/logout">{this.props.user.username} logout</Link>:  <Link to="/login">login</Link>
     return (
       <nav className="navbar navbar-inverse">
         <div className="container-fluid">
@@ -20,7 +22,7 @@ class App extends React.Component {
               <Link to="/register">register</Link>
             </li>
               <li>
-              <Link to="/login">login</Link>
+             {loginOrOut}
             </li>
           </ul>
         </div>

@@ -38,7 +38,7 @@
     "webpack": "^3.3.0"
   },
   "scripts": {
-    "start": "nodemon --use_strict server.js",
+    "start": "nodemon server.js",
     "bundle": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
